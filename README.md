@@ -1,1 +1,1 @@
-# Lista-de-execicios
+# Lista-de-exercicios
