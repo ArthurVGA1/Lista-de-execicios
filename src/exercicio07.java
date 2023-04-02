@@ -7,25 +7,27 @@ public class exercicio07 {
 
         System.out.print("Digite o tamanho de 1 dos lados do quadrado em centimetros: ");
         Double lado = input.nextDouble();
+        input.nextLine(); // Consumir nova linha deixada no buffer
+        
         Double area = lado * lado;
         
         System.out.println("A area do quadrado e: " + area);
 
         /*Colocando uma forma de opcao para converter os centimetros para metros */
 
-        // System.out.println("Voce quer converter a area de centimetros para metros?(Digite s para sim e n para nao)");
-        // String opcao = input.nextLine();
+        System.out.println("Voce quer converter a area de centimetros para metros?(Digite s para sim e n para nao)");
+        String opcao = input.nextLine();
 
-        // if(opcao.equalsIgnoreCase("s")) {
-        //     Double metros = area / 100;
-        //     System.out.println(area + "centrimetros sao" + metros + "metros.");            
-        // }
-        // else if(opcao.equalsIgnoreCase("n")) {
-        //     System.out.print("OK");
-        // }
-        // else {
-        //     System.out.print("Opcao invalida!");
-        // }
+        if(opcao.equalsIgnoreCase("s")) {
+            Double metros = area / 100;
+            System.out.println(area + "centrimetros sao " + metros + " metros.");            
+        }
+        else if(opcao.equalsIgnoreCase("n")) {
+            System.out.print("OK");
+        }
+        else {
+            System.out.print("Opcao invalida!");
+        }
         input.close();
     }
 }
