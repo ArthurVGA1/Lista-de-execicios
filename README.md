@@ -1,2 +1,2 @@
 ### Lista de exercicios java
-https://wiki.python.org.br/EstruturaSequencial
+https://wiki.python.org.br/ListaDeExercicios
