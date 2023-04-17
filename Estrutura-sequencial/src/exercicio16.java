@@ -12,7 +12,14 @@ public class exercicio16 {
 
         System.out.println("Quantos metros quadrados vao ser pintados?");
         Double area = sc.nextDouble();
-        Double tinta = 
+        int lata = (int) Math.ceil(area / 54); 
+        /* 54 é o litro por metro = 3 vezes os litros da lata = 18 */
+        Double valor = lata * 80.0;
+        /* Ou poderia coloca "valor = (((area / 3) / 18) * 80)" para ficar menor. */
 
+        System.out.println("Quantidade de latas de tinta e " + lata);
+        System.out.printf("O valor das tintas e R$%.2f", valor);
+
+        sc.close();
     }
 }
