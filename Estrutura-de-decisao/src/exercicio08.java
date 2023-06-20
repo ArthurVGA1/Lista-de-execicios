@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class exercicio08 {
+public class Exercicio08 {
   /* Faça um programa que pergunte o preço de três produtos e informe qual
   produto você deve comprar, sabendo que a decisão é sempre pelo mais barato */
 

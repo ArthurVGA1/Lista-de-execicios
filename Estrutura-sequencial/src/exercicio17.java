@@ -14,12 +14,32 @@ respectivos preços em 3 situações:
     menor. Acrescente 10% de folga e sempre arredonde os valores para 
 cima, isto é, considere latas cheias. */
 
-    Public static void main(String[]args) {
+    public static void main(String[]args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("\nInforme em metros quadrados o tamanho da área que deseja pintar: ");
+        double metrosQuadrados = sc.nextDouble();
 
-        System.out.print("Informe quantos metros quadrados voce deseja pintar: ");
-        Double area = sc.nextDouble();
-        int tinta = (int) Math.ceil(area / 108);
-        Double valor = tinta * 80.0; 
+        double litros = metrosQuadrados / 6;
+
+        double latas = litros / 18;
+        double custoLatas = latas * 80;
+
+        double galoes = litros / 3.6;
+        double custoGaloes = galoes * 25;
+
+        int latasMistura = (int) Math.floor(litros / 18.0);
+        int galoesMistura = (int) Math.ceil((litros - (latasMistura * 18.0)) / 3.6);
+        double precoMistura = (latasMistura * custoLatas) + (galoesMistura * custoGaloes);
+
+        System.out.printf("\nLitros necessarios para pintar toda está área: %.0f",  Math.ceil(litros));
+
+        System.out.println("\nExistem 3 opções de compra para pintar está área.\n");
+        
+        System.out.printf("Opção 1: comprar apenas %.0f latas de 18 litros, por R$ %.2f\n", Math.ceil(litros / 18.0), custoLatas);
+        System.out.printf("Opção 2: comprar apenas %.0f galões de 3,6 litros, por R$ %.2f\n", Math.ceil(litros / 3.6), custoGaloes);
+        System.out.printf("Opção 3: misturar " + latasMistura + " latas de 18 litros e " + galoesMistura + " galões de 3,6 litros, por R$ ");
+        System.out.printf("%.2f", precoMistura);
+
+        sc.close();
     }
 }

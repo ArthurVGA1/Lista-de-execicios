@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio04 {
+public class Exercicio04 {
   /* Faça um Programa que verifique se uma letra digitada é vogal ou consoante. */
 
   public static void main(String[]args) {

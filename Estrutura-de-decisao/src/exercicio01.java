@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio01 {
+public class Exercicio01 {
   /* Faça um Programa que peça dois números e imprima o maior deles. */
 
   public static void main(String[]args){

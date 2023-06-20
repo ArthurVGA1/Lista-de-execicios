@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio07 { /* Inclui o exercicio 6 */
+public class Exercicio07 { /* Inclui o exercicio 6 */
   /* Faça um Programa que leia três números e mostre o maior e o menor deles. */
 
   public static void main(String[]args) {
